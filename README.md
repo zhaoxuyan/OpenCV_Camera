@@ -314,4 +314,4 @@ void processimageGaosi(Mat &frame) {
 
 #### 6.实验心得
 
-通过本次实验，环境配置方面已经是轻车熟路。带给我更大的体会是写程序调库时因为版本的不同，所带来的麻烦是巨大的。我使用的是openCV 3.0.0，与老师建议的openCV 2.x版本在头文件，函数的使用上面有诸多的不同，导致我花了大量时间搜索较新的代码语法，例如将Mat转为IplImage指针的语法，老版本是`IplImage* transIplimage = cvCloneImage(&(IplImage)frame);`，新版本则简单得多`auto *transIplimage = new IplImage(frame);`。反之是`cv::Mat m1 = cv::cvarrToMat(ipl);` 相较于老版本，3.0.0更为简单和方便，但是网上文档资源较旧版本来说较少，这也是对科学搜索能力的一种锻炼。本次实验还是相当有意思的，涉及到的点阵字库，人脸检测，高斯滤波，Canny边缘检测，这些算法实现虽然是简单的调库，但是最后要得出满意的效果也是不容易的。这对编程能力也是一种锻炼。总之，收货很大。
+通过本次实验，环境配置方面已经是轻车熟路。带给我更大的体会是写程序调库时因为版本的不同，所带来的麻烦是巨大的。我使用的是openCV 3.0.0，与老师建议的openCV 2.x版本在头文件，函数的使用上面有诸多的不同，导致我花了大量时间搜索较新的代码语法，例如将Mat转为IplImage指针的语法，老版本是`IplImage* transIplimage = cvCloneImage(&(IplImage)frame);`，新版本则简单得多`auto *transIplimage = new IplImage(frame);`。反之是`cv::Mat m1 = cv::cvarrToMat(ipl);` 相较于老版本，3.0.0更为简单和方便，但是网上文档资源较旧版本来说较少，这也是对科学搜索能力的一种锻炼。本次实验还是相当有意思的，涉及到的点阵字库，人脸检测，高斯滤波，Canny边缘检测，这些算法实现虽然是简单的调库，但是最后要得出满意的效果也是不容易的。这对编程能力也是一种锻炼。总之，收获很大。
