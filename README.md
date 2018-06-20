@@ -172,9 +172,6 @@ int main() {
 
 
 
-- 结果
-
-![](https://ws4.sinaimg.cn/large/006tKfTcgy1fqst55w6idj31kw0sq4kd.jpg)
 
 
 
